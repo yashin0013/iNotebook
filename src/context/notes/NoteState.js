@@ -40,6 +40,42 @@ const NoteState = (props)=>{
       "__v": 0
     },
     {
+      "_id": "640d97c364351b61e2c506a4",
+      "user": "63fc03a26caaf8351950bc60",
+      "title": "our notes are added",
+      "description": "yes you are right our notes are added and we are back on track",
+      "tag": "tag",
+      "date": "2023-03-12T09:13:39.966Z",
+      "__v": 0
+    },
+    {
+      "_id": "640f4cae51d0fb9fb140eb96",
+      "user": "63fc03a26caaf8351950bc60",
+      "title": "I am the best",
+      "description": "yes you are right becouse you worked hard for ir.",
+      "tag": "tag",
+      "date": "2023-03-13T16:17:50.203Z",
+      "__v": 0
+    },
+    {
+      "_id": "640d97c364351b61e2c506a4",
+      "user": "63fc03a26caaf8351950bc60",
+      "title": "our notes are added",
+      "description": "yes you are right our notes are added and we are back on track",
+      "tag": "tag",
+      "date": "2023-03-12T09:13:39.966Z",
+      "__v": 0
+    },
+    {
+      "_id": "640f4cae51d0fb9fb140eb96",
+      "user": "63fc03a26caaf8351950bc60",
+      "title": "I am the best",
+      "description": "yes you are right becouse you worked hard for ir.",
+      "tag": "tag",
+      "date": "2023-03-13T16:17:50.203Z",
+      "__v": 0
+    },
+    {
       "_id": "640f4cc251d0fb9fb140eb9d",
       "user": "63fc03a26caaf8351950bc60",
       "title": "Updated the note",
