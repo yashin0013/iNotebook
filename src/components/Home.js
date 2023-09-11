@@ -1,12 +1,50 @@
-import React from 'react'
-
+import React, {useContext} from "react";
+import contextValue from "../context/notes/noteContext";
 function Home() {
+  const context = useContext(contextValue);
+  const {notes, setNotes} = context;
   return (
-    <div>
-      <h2>This is Home </h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores animi, et fugiat minus aliquid aliquam sint suscipit commodi nam ex quod velit possimus enim reprehenderit corrupti magni, veniam nisi placeat recusandae quam odio! Illum amet harum molestias ratione, recusandae repudiandae accusamus libero magnam ipsum explicabo labore tempore rem reiciendis minima, sapiente cumque quaerat magni sequi. Praesentium autem velit provident voluptatem culpa magni voluptate illum hic dignissimos ullam esse, ut veniam quas nesciunt, modi voluptates nemo laborum reiciendis temporibus. Rem a possimus doloremque culpa voluptas nulla veniam, magni sint modi architecto ipsam corporis fuga, quibusdam, vero quia ratione suscipit dolores quis laudantium dolor esse? Quaerat exercitationem neque sed labore, excepturi magni, iusto beatae quo laudantium provident fuga quod consectetur eum quos possimus eaque aliquid. Explicabo, cupiditate mollitia? Eum sit adipisci accusamus odit maiores at? Commodi repellendus fugiat non impedit voluptatum animi quo repellat ducimus, illo illum, adipisci accusamus saepe molestiae maxime accusantium possimus. Tenetur magnam aperiam molestiae excepturi harum esse repudiandae possimus necessitatibus consectetur laboriosam officiis, nulla id illum, praesentium, suscipit perspiciatis. Illo accusantium iure iste doloremque architecto neque dolores quo sunt aperiam eum deserunt voluptatem similique animi necessitatibus quis, nulla reprehenderit deleniti ipsum placeat exercitationem numquam? Officia blanditiis vitae vel. Natus odit ex dicta, error temporibus atque modi maxime delectus possimus molestiae, nihil tenetur enim quae molestias deleniti et fuga voluptatem distinctio neque labore dignissimos officia! Nostrum, sit, neque doloremque adipisci qui in eum quia odit magni quos dolore! Incidunt eum nulla commodi tenetur eos corrupti ipsam exercitationem amet perspiciatis repudiandae iusto enim harum distinctio hic, ducimus temporibus architecto officiis vitae! Possimus consectetur voluptates assumenda iste porro itaque nobis, minima fuga architecto mollitia earum eaque quod officiis. At molestias nostrum reiciendis consectetur neque iure? Repellat iste est nemo enim perspiciatis quam autem. Consequuntur odio voluptatum quibusdam rem labore aspernatur exercitationem amet cumque maxime pariatur, fugit, dolore libero mollitia distinctio illo ipsam facere accusantium? Magnam reiciendis eveniet vero voluptate soluta ea ipsum illum dignissimos asperiores quibusdam fugiat necessitatibus, nemo dolorem suscipit magni ab tempora! Facilis est officiis accusantium quos! Corporis et, nemo commodi soluta autem ratione.</p>
+    <div className="container">
+      <div className="container my-3">
+        <h2>Add a Note</h2>
+        <form>
+          <div className="mb-3">
+            <label htmlFor="exampleInputEmail1" className="form-label">
+              Email address
+            </label>
+            <input
+              type="email"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" className="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="exampleInputPassword1" className="form-label">
+              Password
+            </label>
+            <input
+              type="password"
+              className="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div className="container my-3">
+        <h2>Your Note</h2>
+        {notes.map((note)=>{
+          return note.title;
+        })}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
