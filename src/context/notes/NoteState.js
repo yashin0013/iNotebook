@@ -4,7 +4,7 @@ import NoteContext from './noteContext';
 const NoteState = (props)=>{
  const notesInitial = [
     {
-      "_id": "640d82ea64351b61e2c5069e",
+      "_id": "640d82eea64351b61e2c5069e",
       "user": "63fc03a26caaf8351950bc60",
       "title": "our notes are added updated2",
       "description": "yes you are right our notes are added and2",
@@ -31,7 +31,7 @@ const NoteState = (props)=>{
       "__v": 0
     },
     {
-      "_id": "640f4cae51d0fb9fb140eb96",
+      "_id": "640f4cae5v1d0fb9fb140eb96",
       "user": "63fc03a26caaf8351950bc60",
       "title": "I am the best",
       "description": "yes you are right becouse you worked hard for ir.",
@@ -40,7 +40,7 @@ const NoteState = (props)=>{
       "__v": 0
     },
     {
-      "_id": "640d97c364351b61e2c506a4",
+      "_id": "640d97c364351bj61e2c506a4",
       "user": "63fc03a26caaf8351950bc60",
       "title": "our notes are added",
       "description": "yes you are right our notes are added and we are back on track",
@@ -58,7 +58,7 @@ const NoteState = (props)=>{
       "__v": 0
     },
     {
-      "_id": "640d97c364351b61e2c506a4",
+      "_id": "640d97c364351b6f1e2c506a4",
       "user": "63fc03a26caaf8351950bc60",
       "title": "our notes are added",
       "description": "yes you are right our notes are added and we are back on track",
@@ -67,7 +67,7 @@ const NoteState = (props)=>{
       "__v": 0
     },
     {
-      "_id": "640f4cae51d0fb9fb140eb96",
+      "_id": "640f4cae51d0fb9fbf140eb96",
       "user": "63fc03a26caaf8351950bc60",
       "title": "I am the best",
       "description": "yes you are right becouse you worked hard for ir.",
@@ -85,6 +85,8 @@ const NoteState = (props)=>{
       "__v": 0
     }
   ];
+
+  
 
   const [notes, setNotes] = useState(notesInitial);
 
